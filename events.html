@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http_equiv = "X-UA-Compatible" content="IE=edge">
+        <title>ULCES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <script src="https://kit.fontawesome.com/7cf0e14668.js" crossorigin="anonymous"></script>
+    </head>    
+    <body>
+        <div class="navbar" id="navbar">
+            <div class="left-nav">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="images/ces.jpg">
+                        <source media="(max-width: 540px)" srcset="images/icon.jpg">
+                        <img id="logo" src="images/ces.jpg" alt="responsive image">
+                    </picture>
+                </a>
+               
+                
+            </div>
+            <div class="right-nav">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="https://ulwolves.ie/society/entrepreneurship" class="join-btn" id="join">Join</a> 
+            </div>
+        </div>
+
+            
+        <script>
+            function scrollFunction() {
+
+            if (window.innerWidth > 768) {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.height = "5rem";
+                document.getElementById("logo").style.width = "12rem";
+                document.getElementById("join").style.fontSize = "1rem"; // Make text smaller
+                } else {
+                document.getElementById("navbar").style.height = "7rem";
+                document.getElementById("logo").style.width = "17rem";
+                document.getElementById("join").style.fontSize = "1.1rem"; // Make text smaller
+                }
+            }
+            }
+
+            window.onscroll = scrollFunction;
+        </script>
+
+        <main class="main-content">
+            <div class="events-intro">
+                <h1>What's Happening at ULCES?</h1>
+                <h4>Discover Our Event Lineup Featuring Skill-Building Workshops, Informative Sessions and Exciting Social Nights!</h4>
+
+            </div>
+            <div class="workshop-grid">
+                
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/workshop.jpg">
+                    </div>
+                    <h2>Workshops</h2>
+                    <p>Develop your startup and business skills with our detailed workshops led by industry experts</p>
+                </div>
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/drive.jpg">
+                    </div>
+                    <h2>Info Sessions</h2>
+                    <p>Learn from professionals about the consulting industry and the essentials to staring a business</p>
+                </div>
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/competition.jpg">
+                    </div>
+                    <h2>Competitions</h2>
+                    <p>Challenge yourself in contests that sharpen your skills by tackling real-world challenges</p>
+                </div>
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/bowling.jpg">
+                    </div>
+                    <h2>Bonding Nights</h2>
+                    <p>Relax and enjoy unforgettable evenings with fellow members at our engaging bonding nights</p>
+                </div>
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/casestudy.jpg">
+                    </div>
+                    <h2>Case Studies</h2>
+                    <p>Participate in dynamic case study competitions to enhance consulting skills and win prizes</p>
+                </div>
+               
+                <div class="workshop-card">
+                    <div class="image-placeholder">
+                        <img src="images/pizza.jpg">
+                    </div>
+                    <h2>Idea Generation</h2>
+                    <p>Engage in creative thinking exercises to expand your entrepreneurial mindset</p>
+                </div>
+               
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-content">
+               
+                <p>&copy; 2023 ULCES. All rights reserved.</p>
+                <img src="images/icon.jpg">
+            </div>
+        </footer>
+
+    </body>

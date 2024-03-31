@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http_equiv = "X-UA-Compatible" content="IE=edge">
+        <title>ULCES</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <script src="https://kit.fontawesome.com/7cf0e14668.js" crossorigin="anonymous"></script>
+        <style>
+            ul.custom-bullets {
+                list-style: none; 
+                padding-left: 0; 
+            }
+            ul.custom-bullets li {
+                padding-left: 20px; 
+                position: relative;
+            }
+            ul.custom-bullets li::before {
+                content: "\2713"; 
+                position: absolute;
+                left: 0;
+                color: green;
+                font-weight: bold;
+            }
+        </style>
+    <body>
+        <div class="navbar" id="navbar">
+            <div class="left-nav">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="images/ces.jpg">
+                        <source media="(max-width: 540px)" srcset="images/icon.jpg">
+                        <img id="logo" src="images/ces.jpg" alt="responsive image">
+                    </picture>
+                </a>
+               
+                
+            </div>
+            <div class="right-nav">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="https://ulwolves.ie/society/entrepreneurship" class="join-btn" id="join">Join</a> 
+            </div>
+        </div>
+
+        <div class="landing-intro">
+            <img src="images/bl.png" class="corner-graphic-top-left" alt="Blue Graphic">
+                <img src="images/sw.png" class="corner-graphic-bottom-right" alt="Green Graphic">
+            <div class="intro-container">
+                
+                <div class="intro-left">
+                    <h2>Empower Your Potential and Ignite Innovation <br> with UL Consulting & Entrepreneurship</h2>
+                    <h3>Step into the world of innovation and entrepreneurship at UL.
+                         Collaborate on projects that make a difference, gain invaluable experience, and build a network that takes you further. </h3>
+                    <ul class="custom-bullets">
+                    <li>Enhance your CV with real-world experience</li>
+                    <li>Transform ideas into successful ventures</li>
+                    <li>Engage with consultancy case studies</li>
+                    <li>Gain indispensable startup knowledge</li>
+                    <li>Compete in entrepreneurship competitions</li>
+                    </ul>
+                </div>
+                
+                <img src="images/pollaroid.png">
+                
+            </div>
+        </div>
+        
+
+        
+
+        <script>
+            function scrollFunction() {
+
+            if (window.innerWidth > 768) {
+                if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.height = "5rem";
+                document.getElementById("logo").style.width = "12rem";
+                document.getElementById("join").style.fontSize = "1rem"; // Make text smaller
+                } else {
+                document.getElementById("navbar").style.height = "7rem";
+                document.getElementById("logo").style.width = "17rem";
+                document.getElementById("join").style.fontSize = "1.1rem"; // Make text smaller
+                }
+            }
+            }
+
+            window.onscroll = scrollFunction;
+        </script>
+
+        <section class="services">
+            <h2 class="services-title">Bringing Your Ideas to Life</h2>
+            <div class="service-container">
+                <div class="service">
+                    <img src="images/workshopicon.png">
+                    <h3>Innovation Workshops</h3>
+                </div>
+                <div class="service">
+                    <img src="images/consulticon.png">
+                    <h3>Consulting Seminars</h3>
+                </div>
+                <div class="service">
+                    <img src="images/casestudyicon.png">
+                    <h3>Consulting Case Work</h3>
+                </div>
+            </div>
+        </section>
+
+        <div class="statistics-section" style="background-image: url('path-to-your-background-image.jpg');">
+            <div class="statistic">
+                <h2>Founded</h2>
+                <p>2018</p>
+            </div>
+            <div class="statistic">
+                <h2>70+</h2>
+                <p>Active Members</p>
+            </div>
+            <div class="statistic">
+                <h2>14</h2>
+                <p>Commitee Members</p>
+            </div>
+            <div class="statistic">
+                <h2>30+</h2>
+                <p>Talks and Info Sessions</p>
+            </div>
+        </div>
+
+        <div class="news-section">
+            <h1>News & Upcoming Events</h1>
+            <div class="news-container">
+                <div class="news-desc">
+                    <h4>Stay Connected!</h4>
+                    <p>Keep up with the latest news and upcoming events from our society by following us on social media and our official platforms. You can stay in the loop through Instagram, LinkedIn and the UL Wolves website. We’re constantly updating to keep you informed and involved in all our events.</p>
+                </div>
+                <div class="social-contacts">
+                    <a href="https://www.instagram.com/ul_ces/"><i class="fa-brands fa-instagram"></i> @ul_ces</a>
+                    <a href="https://www.linkedin.com/company/ul-entrepreneurship/mycompany/"><i class="fa-brands fa-linkedin"></i> @ul-entrepreneurship</a>
+                    <a href="https://ulwolves.ie/society/entrepreneurship"><img src="images/icon.jpg" style="width: 2.5rem;">  UL Wolves</a>
+                </div>
+            </div>
+        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/3d93f25c31605be6ac1437d7aca70592.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+
+        <h2 class="sponsors-title">Our Sponsors & Partners</h2>
+        <section class="sponsors-section">
+            <img src="images/sponsor2.png" class="corner-graphic-top-right" >
+            <img src="images/sponsor1.png" class="corner-graphic-bottom-left" >
+            
+            <div class="sponsors-container">
+                <a href="https://www.deloitte.com/ie/en.html" class="sponsor" target="_blank"><img src="images/Logo-Deloitte.png"></a>
+                <a href="https://www.scaleireland.org" class="sponsor" target="_blank"><img src="images/scale.png"></a>
+                <a href="https://www.iscg.ie" class="sponsor" target="_blank"><img src="images/iscg.png"></a>
+                <a href="https://www.isef.ie" class="sponsor" target="_blank"><img src="images/ISEF_LOGO.png"></a>
+                <a href="https://www.accenture.com/ie-en" class="sponsor" target="_blank"><img src="images/Accenture-logo.png"></a>
+            
+            </div>
+        </section>
+
+        
+
+        <footer class="footer">
+            <div class="footer-content">
+               
+                <p>&copy; 2023 ULCES. All rights reserved.</p>
+                <img src="images/icon.jpg">
+            </div>
+        </footer>
+
+    </body>
+</html>
